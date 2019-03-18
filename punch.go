@@ -32,7 +32,7 @@ func punch() string {
 	v.Set("timeStamp", strconv.FormatInt(timeUnix/1e6, 10))
 	body := ioutil.NopCloser(strings.NewReader(v.Encode()))
 	client := &http.Client{}
-	reqest, err := http.NewRequest("POST", "http://oa.zuolin.com/evh/punch/punchClock", body)
+	reqest, err := http.NewRequest("POST", "http://oa.zuolin.com/evh/techpark/punch/punchClock", body)
 	if err != nil {
 		log.Fatal("Fatal error ", err)
 	}
