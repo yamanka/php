@@ -38,7 +38,7 @@ func punch() string {
 	}
 	reqest.Header.Set("Content-Type", "application/x-www-form-urlencoded")
 	reqest.Header.Set("x-everhomes-device", "7D158FC8A2FC4CB8AD1C28E2396C55F7-101")
-	reqest.Header.Set("cookie", "token=D4CSFyuOtl0GHP98kPqAyTnRn6yTuLYBGb3mzy3Mw5cyeCA1tVtgTBUrPZ_I4SN9je_LMI7geEo_B_IYnzhwyi3PMBVHG6v44xEMvPuBw0M-lP9pFEyGD4TEAybjlHf7")
+	reqest.Header.Set("cookie", "token=ziBuZPRrsMhFHYuPac5na6i02NGT76RlQ7-6hj_o7agyeCA1tVtgTBUrPZ_I4SN9je_LMI7geEo_B_IYnzhwyi3PMBVHG6v44xEMvPuBw0McFdkQptWMFTBlabaN_Ke-")
 	resp, err := client.Do(reqest) //发送请求
 	defer resp.Body.Close()        //一定要关闭resp.Body
 	content, err := ioutil.ReadAll(resp.Body)
